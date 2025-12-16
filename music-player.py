@@ -10,7 +10,7 @@ def play_music(folder, song_name):
         print("File not found")
         return
 
-    # Convert M4A to WAV on the fly
+    
     if file_path.endswith(".m4a"):
         song_wav = file_path.replace(".m4a", ".wav")
         audio = AudioSegment.from_file(file_path, format="m4a")
@@ -89,5 +89,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
